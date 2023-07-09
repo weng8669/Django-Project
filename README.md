@@ -42,7 +42,7 @@ Article.objects.create(title='文章標題', author='作者', content='文章內
 
 刪除文章：DELETE http://localhost:8000/articles/<article_id>/
 
-<article_id> 是指文章的 ID，可以從取得文章列表中的回應中找到相應的 ID。
+article_id 是指文章的 ID，可以從取得文章列表中的回應中找到相應的 ID。
 
 ## 建立一個使用者帳號，並產生 JWT Token。
 
@@ -60,6 +60,6 @@ curl -X POST -H "Content-Type: application/json" -d "{\"username\": \"your-usern
 
 成功請求後，會收到一個回應，其中包含 access 和 refresh 的 JWT Token。可以使用 access Token 來進行 API 操作。
 
-curl -X GET -H "Authorization: Bearer <access-token>" http://localhost:8000/articles/
+curl -X GET -H "Authorization: Bearer access-token" http://localhost:8000/articles/
 
 將access-token替換為你獲得的access Token。就可以透過 JWT Token 進行身份驗證並操作「熱門文章」 API。
