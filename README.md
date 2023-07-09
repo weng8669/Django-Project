@@ -1,8 +1,10 @@
 # Django-Project
 執行以下指令建立 Docker 映像：
 docker-compose build
+
 執行以下指令啟動 Django 開發伺服器：
 docker-compose up
+
 透過 http://localhost:8000/articles/ 存取文章 API，並使用 JWT Token 進行身份驗證。
 
 建立資料庫遷移檔案：
