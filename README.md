@@ -1,4 +1,14 @@
-## Django-Project
+## 文章管理API Django Project
+環境建置採用 docker-compose，python 使用 3.7 版本， MariaDB
+
+Web 框架採用 Django 3.2
+
+文章資料欄位與測試資料參考 https://dailyview.tw/ 畫面產出四隻「熱門文章」 API，包含新增、刪除、修改、取得文章
+
+API權限使用 JWT，產生 user 可透過 JWT token 操作「熱門文章」 API
+
+
+## 啟動專案說明
 執行以下指令建立 Docker 映像：
 
 docker-compose build
@@ -28,7 +38,7 @@ from myproject.models import Article
 
 建立測試資料:
 
-Article.objects.create(title='文章標題', author='作者', content='文章內容', image='https://example.com/image1.jpg')
+Article.objects.create(image='https://example.com/image1.jpg', date='yyyy/mm/dd', title='文章標題' )
 
 ## 透過 API 存取文章資料。以下是範例請求：
 
