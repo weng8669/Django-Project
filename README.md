@@ -8,7 +8,7 @@ Web 框架採用 Django 3.2
 API權限使用 JWT，產生 user 可透過 JWT token 操作「熱門文章」 API
 
 
-## Django-Project
+## 啟動專案說明
 執行以下指令建立 Docker 映像：
 
 docker-compose build
