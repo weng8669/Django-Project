@@ -28,7 +28,7 @@ from myproject.models import Article
 
 建立測試資料:
 
-Article.objects.create(title='文章標題', author='作者', content='文章內容', image='https://example.com/image1.jpg')
+Article.objects.create(image='https://example.com/image1.jpg', date='yyyy/mm/dd', title='文章標題' )
 
 ## 透過 API 存取文章資料。以下是範例請求：
 
