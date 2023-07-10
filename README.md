@@ -56,7 +56,7 @@ docker-compose run web python manage.py createsuperuser
 
 curl -X POST -H "Content-Type: application/json" -d "{\"username\": \"your-username\", \"password\": \"your-password\"}" http://localhost:8000/api/token/
 
-將your-username和your-password替換為剛建立的超級使用者帳號的使用者名稱和密碼。
+將your-username和your-password替換為剛建立的超級使用者帳號的使用者名稱和密碼。(我帳密是都設定root)
 
 成功請求後，會收到一個回應，其中包含 access 和 refresh 的 JWT Token。可以使用 access Token 來進行 API 操作。
 
